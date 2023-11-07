@@ -18,6 +18,9 @@ HEADERS += \
 FORMS += \
     widget.ui
 
+INCLUDEPATH += D:\OpenCV\opencv\opencv-build\install\include
+LIBS += D:\OpenCV\opencv\opencv-build\lib\libopencv_*.a
+
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
