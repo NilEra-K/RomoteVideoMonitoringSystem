@@ -17,7 +17,7 @@ Widget::~Widget()
 
 // 界面初始化
 void Widget::initWidget() {
-    QString imgPath = "../OpencvEnhance/images/girldriver.jpg";   // 使用相对路径时, 以 Debug 作为当前路径
+    QString imgPath = "../OpencvEnhance/images/girldriver.jpg";   // 使用相对路径时写法
                                                                   // 路径中不能包含中文
     Mat imgData = imread(imgPath.toLatin1().data());              // 讲路径转化为 Latin1 格式, 读取图片数据
     cvtColor(imgData, imgData, COLOR_BGR2RGB);                    // 将 imgData 中的图片(BGR格式)转化为RGB格式, 并保存到 imgData 中
